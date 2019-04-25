@@ -12,7 +12,7 @@ import java.util.List;
 @EnableAutoConfiguration
 
 public class EmployeeController {
-    @RequestMapping("/test")
+    @RequestMapping("/employee")
     public List<Employee> getEmployeeList() {
         Employee employee1 = new Employee(0, "小明", 20, "男");
         Employee employee2 = new Employee(1, "小红", 19, "女");
