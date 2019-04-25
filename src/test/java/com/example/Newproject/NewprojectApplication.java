@@ -32,7 +32,7 @@ public class NewprojectApplication {
     @Test
     public void testEmployeeController() throws  Exception{
         RequestBuilder request = null;
-        request = get("/test");
+        request = get("/employees");
         mvc.perform(request).andExpect(status().isOk())
                 .andExpect(content().string(equalTo("[{\"id\":0,\"name\":\"小明\",\"age\":20,\"gender\":\"男\"},{\"id\":1,\"name\":\"小红\",\"age\":19,\"gender\":\"女\"},{\"id\":2,\"name\":\"小智\",\"age\":15,\"gender\":\"男\"},{\"id\":3,\"name\":\"小刚\",\"age\":16,\"gender\":\"男\"},{\"id\":4,\"name\":\"小霞\",\"age\":15,\"gender\":\"女\"}]")));
     }
